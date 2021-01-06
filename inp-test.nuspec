@@ -46,6 +46,13 @@
     -->
     <!-- specify the names of the packages that this package depends on. These packages will be installed
     prior to this package installation. It is posible to add a specific package version (see example) Make sure that Choco has all nessecary Repo's available -->
+    <dependencies>
+      <dependency id="insignit-helper" />
+      <!-- 
+    <dependency id="" />
+    <dependency id="" version=""/> 
+    -->
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
