@@ -1,18 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>inp-customernameorcentral-softwarename</id>  <!--no spaces, and lowercase only, use - for as seperator between Words-->
-    <title>Vendorname SoftwareName (Install)</title> <!-- Full name of the package without version number. No restrictions regarding spaces, Casing ect. -->
-    <version>1.0.0.00</version> <!-- version should MATCH as closely as possible with the underlying software. Letters not allowed -->
-    <authors>Your Name</authors> <!-- name of the Package Creators/Maintainers (comma seperated) -->
-    <owners>Insign.it</owners> <!-- Owner of the Package, use Insign.it for Inpackage packages -->
-    
+    <id>inp-test</id>
+    <!--no spaces, and lowercase only, use - for as seperator between Words-->
+    <title>Vendorname SoftwareName (Install)</title>
+    <!-- Full name of the package without version number. No restrictions regarding spaces, Casing ect. -->
+    <version>1.0.0.01</version>
+    <!-- version should MATCH as closely as possible with the underlying software. Letters not allowed -->
+    <authors>Your Name</authors>
+    <!-- name of the Package Creators/Maintainers (comma seperated) -->
+    <owners>Insign.it</owners>
+    <!-- Owner of the Package, use Insign.it for Inpackage packages -->
     <!-- free to use description field. MarkDown is allowed. Please use this field to explain heavily customized packages -->
     <description>
     Describe your package here
     Download URL: Specify the dowload URL of the software (if available)
     </description>
-    <tags>Inpackage,CustomerName or Central,Vendorname,Softwarename</tags> <!--Provide comma seperated tags that relate to the software installed by this package. Example: Chrome,Google,Brower -->
+    <tags>Inpackage,CustomerName or Central,Vendorname,Softwarename</tags>
+    <!--Provide comma seperated tags that relate to the software installed by this package. Example: Chrome,Google,Brower -->
     <!--InPackage uses tags to identify special package types
     This information is used for troubleshooting and billing
     At the moment three InPackage Tags are available.
@@ -42,8 +47,8 @@
     <!-- specify the names of the packages that this package depends on. These packages will be installed
     prior to this package installation. It is posible to add a specific package version (see example) Make sure that Choco has all nessecary Repo's available -->
     <dependencies>
-    <dependency id="insignit-helper" />
-    <!-- 
+      <dependency id="insignit-helper" />
+      <!-- 
     <dependency id="" />
     <dependency id="" version=""/> 
     -->
