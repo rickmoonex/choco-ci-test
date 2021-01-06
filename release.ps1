@@ -9,7 +9,8 @@ $nuspecVersion = $xmlDoc.package.metadata.version
 
 # Create a new Git tag corresponding to the Nuspec version
 Write-Host "Adding new Git tag 🔖" -ForegroundColor Magenta
-git tag -a $nuspecVersion -m $nuspecVersion master
+$tag = "v" $nuspecVersion
+git tag -a $tag -m $nuspecVersion master
 
 # Push the commits and corresponding tag to the GitHub repo
 Write-Host "Pushing to GitHub 💾" -ForegroundColor Magenta
