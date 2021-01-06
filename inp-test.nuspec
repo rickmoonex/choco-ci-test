@@ -5,7 +5,7 @@
     <!--no spaces, and lowercase only, use - for as seperator between Words-->
     <title>Vendorname SoftwareName (Install)</title>
     <!-- Full name of the package without version number. No restrictions regarding spaces, Casing ect. -->
-    <version>1.0.0.01</version>
+    <version>1.0.0.02</version>
     <!-- version should MATCH as closely as possible with the underlying software. Letters not allowed -->
     <authors>Your Name</authors>
     <!-- name of the Package Creators/Maintainers (comma seperated) -->
