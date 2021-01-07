@@ -6,8 +6,8 @@ on:
       - v*
 
 jobs:
-  release:
-    name: Release
+  test:
+    name: Test Package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -18,6 +18,11 @@ jobs:
         with:
           args: pack --verbose
 
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
