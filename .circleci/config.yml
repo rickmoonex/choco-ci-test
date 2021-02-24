@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: crazy-max/ghaction-chocolatey
+      - image: ghcr.io/crazy-max/ghaction-chocolatey
     steps:
       - checkout
       - run: choco pack
