@@ -9,3 +9,5 @@ jobs:
     steps:
       - checkout
       - run: choco pack
+      - store_artifacts:
+          path: "*.nupkg"
